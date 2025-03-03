@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genex Genmun</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="bg-white">
+      <nav class="flex justify-between items-center p-3">
+        <div class="ml-12">
+          <img class="w-48" src="./images/genex.PNG" alt="" />
+        </div>
+        <div class="flex justify-between items-center gap-6 mr-8">
+          <div>
+            <h3 class="text-xl font-bold">Welcome Kutubul Alam !</h3>
+            <h4>
+              Login at:
+              <span class="text-[#2ccc37] font-bold">02:26:24 PM</span>
+            </h4>
+            <p>Login Shift: <span class="text-[#2ccc37] font-bold">2</span></p>
+          </div>
+          <button
+            id="logout-btn"
+            class="bg-[#d12735] rounded-md py-2 px-4 font-bold text-white cursor-pointer"
+            type="button"
+          >
+            Log Out
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-gradient-to-r from-[#8d77fe] to-[#992cff] min-h-screen">
+      <div class="w-9/12 mx-auto grid grid-cols-4 grid-rows-2 gap-8 py-10">
+        <div class="bg-[#a16dfe] grid grid-cols-1 gap-3 pb-2">
+          <div class="bg-[#651cab] text-center">
+            <button class="py-3 text-white font-bold" type="button">
+              Activity Panel
+            </button>
+          </div>
+          <div class="bg-[#651cab] text-center">
+            <button class="py-3 text-white font-bold" type="button">
+              Select Break
+            </button>
+          </div>
+          <div class="bg-[#fbc208] text-center">
+            <button class="py-3 text-black font-bold" type="button">
+              Change Password
+            </button>
+          </div>
+          <div class="bg-[#27a844] text-center">
+            <button
+              id="session-clear"
+              class="py-3 text-white font-bold cursor-pointer"
+              type="button"
+            >
+              Session Clear
+            </button>
+          </div>
+        </div>
+        <div class="col-span-3 row-span-2">
+          <div class="flex justify-between bg-[#651cab]">
+            <h4 class="text-white p-5 font-bold">Time Count</h4>
+            <i>ii</i>
+          </div>
+          <div class="grid grid-cols-3 gap-4 p-5 bg-[#a16dfe]">
+            <div class="border border-[#27a844] rounded-sm">
+              <p class="bg-[#27a844] p-4 text-white font-bold">Meal Break</p>
+              <p class="bg-[#bb91fd] p-4 text-white font-bold">00:00:00</p>
+            </div>
+            <div class="border border-[#17a2b7] rounded-sm">
+              <p class="bg-[#17a2b7] p-4 text-white font-bold">Short Break</p>
+              <p class="bg-[#bb91fd] p-4 text-white font-bold">00:00:00</p>
+            </div>
+            <div class="border border-white rounded-sm">
+              <p class="bg-white p-4 text-black font-bold">Emergency Break</p>
+              <p class="bg-[#bb91fd] p-4 text-white font-bold">00:00:00</p>
+            </div>
+            <div class="border border-[#27a844] rounded-sm">
+              <p class="bg-[#27a844] p-4 text-white font-bold">
+                Training Break
+              </p>
+              <p class="bg-[#bb91fd] p-4 text-white font-bold">00:00:00</p>
+            </div>
+            <div class="border border-[#17a2b7] rounded-sm">
+              <p class="bg-[#17a2b7] p-4 text-white font-bold">Prayer Break</p>
+              <p class="bg-[#bb91fd] p-4 text-white font-bold">00:00:00</p>
+            </div>
+            <div class="border border-white rounded-sm">
+              <p class="bg-white p-4 text-black font-bold">Coaching Break</p>
+              <p class="bg-[#bb91fd] p-4 text-white font-bold">00:00:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
